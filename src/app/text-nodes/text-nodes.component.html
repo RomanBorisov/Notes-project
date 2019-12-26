@@ -1,0 +1,26 @@
+<div class="container" [style.backgroundColor]="defaulColor">
+    <div class="headline">
+        <mat-form-field floatLabel="never" color="accent">
+            <input matInput placeholder="Введите заголовок">
+        </mat-form-field>
+    </div>
+    <div class="content">
+        <mat-form-field floatLabel="never" color="accent">
+            <textarea matInput placeholder="Текст заметки"></textarea>
+        </mat-form-field>
+    </div>
+
+    <div class="settings">
+        <mat-form-field floatLabel="never">
+            <input matInput placeholder="Введите категорию">
+        </mat-form-field>
+        <div class="color-board" *ngIf="openedColorBoard">
+            <button class="button-color" *ngFor="let color of colors" [style.backgroundColor]="color" (click)="changeColor(color)">
+            </button>
+        </div>
+        <button class="color-board-button" mat-fab color="primary" class="color-board-button" (click)="openColorBoard()">Цвет</button>
+
+    </div>
+
+
+</div>

@@ -1,10 +1,14 @@
 <mat-sidenav-container>
     <mat-sidenav mode="side" [(opened)]="opened">
         <button mat-button>Закладки</button>
-        <button mat-button>Список категорий</button>
-        <button mat-button>Редактировать категории</button>
+        <div class="category">
+            <button mat-button>Список категорий</button>
+            <button mat-button>Редактировать категории</button>
+        </div>
         <button mat-button>Архив</button>
         <button mat-button>Корзина</button>
     </mat-sidenav>
-    <mat-sidenav-content>Main content</mat-sidenav-content>
+    <mat-sidenav-content>
+        <app-text-nodes></app-text-nodes>
+    </mat-sidenav-content>
 </mat-sidenav-container>
