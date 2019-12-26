@@ -6,10 +6,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
-  declarations: [SidebarComponent],
+  declarations: [
+    SidebarComponent
+  ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    SidebarModule
   ]
 })
 export class SidebarModule { }
