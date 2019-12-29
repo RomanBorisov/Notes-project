@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ListOfNotesService } from '../list-of-notes.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,10 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
-
   @Input() opened: boolean;
+  notes = [];
 
-ngOnInit() {  }
+  constructor(private listOfNotesService: ListOfNotesService) {}
+
+  ngOnInit() {
+    this.notes = this.listOfNotesService.getNotes();
+  }
+
+  show() {
+    
+  }
 
 }

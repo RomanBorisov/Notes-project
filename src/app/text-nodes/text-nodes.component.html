@@ -1,12 +1,12 @@
 <div class="container" [style.backgroundColor]="defaulColor">
     <div class="headline">
         <mat-form-field floatLabel="never" color="accent">
-            <input matInput placeholder="Введите заголовок">
+            <input matInput placeholder="Введите заголовок" value="" />
         </mat-form-field>
     </div>
     <div class="content">
         <mat-form-field floatLabel="never" color="accent">
-            <textarea matInput placeholder="Текст заметки"></textarea>
+            <textarea matInput placeholder="Текст заметки">{{note.noteText}}</textarea>
         </mat-form-field>
     </div>
 
@@ -19,7 +19,7 @@
             </button>
         </div>
         <button class="color-board-button" mat-fab color="primary" class="color-board-button" (click)="openColorBoard()">Цвет</button>
-
+        <button routerLink="/" mat-button>Закрыть</button>
     </div>
 
 

@@ -1,0 +1,22 @@
+<div class="containter">
+    <input type="text" class="small-form" (click)="openLargeForm()" *ngIf="isOpenSmallCreatingBlock" placeholder="Заметка">
+
+    <div class="large-creating-block" *ngIf="isOpenLargeCreatingBlock">
+
+        <div class="headline">
+            <mat-form-field floatLabel="never">
+                <input matInput placeholder="Введите заголовок">
+            </mat-form-field>
+        </div>
+
+        <div class="content">
+            <mat-form-field floatLabel="never">
+                <textarea matInput placeholder="Текст заметки"></textarea>
+            </mat-form-field>
+        </div>
+
+        <button mat-button class="close-but" (click)="closeLargeForm()">Закрыть</button>
+
+    </div>
+
+</div>

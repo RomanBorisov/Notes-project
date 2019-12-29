@@ -29,3 +29,8 @@ mat-sidenav-container button {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
+
+.notes-list {
+    display: flex;
+    flex-wrap: wrap;
+}
