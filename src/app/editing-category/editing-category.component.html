@@ -1,0 +1,22 @@
+Форма редактирования категории
+<br><br><br>
+<div class="container">
+   <form>
+	<div class="group">      
+      <input type="text"  required>
+      <span class="bar"></span>
+      <label>Категория</label>
+    </div>
+	<div class="settings">
+        <div class="color-board" *ngIf="openedColorBoard">
+            <button class="button-color" *ngFor="let color of colors" [style.backgroundColor]="color" (click)="changeColor(color)">
+            </button>
+        </div>
+    </div>
+	<div class="example-button-row">
+  <button mat-raised-button color="primary" type="submit" class="btn btn-primary" routerLink="/">Спрятать/Вернуть</button><br><br>
+  <button mat-raised-button color="accent" type="reset" class="btn btn-default" routerLink="/">Закрыть</button>
+</div>
+  </form>  
+</div>
+<br><br><br>

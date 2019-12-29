@@ -1,0 +1,31 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav,
+mat-sidenav-content {
+    padding: 15px;
+}
+
+mat-sidenav {
+    width: 300px;
+}
+
+mat-sidenav-container button {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+    margin: 10px 0;
+    &:hover {
+        background-color: rgb(231, 231, 231);
+    }
+    &:active {
+        background-color: rgb(243, 200, 171);
+    }
+}
+
+.category {
+    padding: 10px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}

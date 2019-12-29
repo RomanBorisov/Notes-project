@@ -1,5 +1,4 @@
 <mat-sidenav-container>
-
     <mat-sidenav mode="side" [(opened)]="opened">
         <button mat-button>Закладки</button>
         <div class="category">
@@ -9,13 +8,8 @@
         <button mat-button>Архив</button>
         <button mat-button>Корзина</button>
     </mat-sidenav>
-
     <mat-sidenav-content>
-
-        <app-create-note></app-create-note>
-        <div class="notes-list">
-            <app-note-card *ngFor=" let note of notes " [note]="note"></app-note-card>
-        </div>
+	<button routerLink="/addnodes" mat-button>Добавить заметку</button>
+        <app-text-nodes></app-text-nodes>
     </mat-sidenav-content>
-
 </mat-sidenav-container>
