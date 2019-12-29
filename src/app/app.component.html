@@ -1,3 +1,5 @@
+<router-outlet></router-outlet>
+
 <div class="container">
     <header class="header">
         <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="opened=!opened">
@@ -5,11 +7,12 @@
         </button>
         <img src="../assets/logo.png">Заметки
         <div class="search-field">
-            <input type="search" class="mat-elevation-z2" placeholder="Поиск">
+            <input type="search" class="search-string" placeholder="Поиск">
         </div>
         <button mat-icon-button aria-label="Example icon-button with a heart icon">
             <i class="material-icons">view_day</i>
         </button> (Аватар)
     </header>
     <app-sidebar [opened]="opened"></app-sidebar>
+
 </div>
